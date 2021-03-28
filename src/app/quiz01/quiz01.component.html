@@ -1,1 +1,23 @@
-<p>quiz01 works!</p>
+<div class="rowfixed">
+
+    <div class="colfixed-1">
+        <mat-form-field>
+
+            <mat-label>Input</mat-label>
+            <input matInput name = "inputValue" [(ngModel)]="inputValue"  (keyup.enter)="applyValue($event)" #input>
+          </mat-form-field>
+    </div>
+    <div class="colfixed-2">
+        <mat-form-field appearance="fill">
+          <select matNativeControl [disabled]="disableSelect.value" (change)="changeSelector($event)" [(ngModel)]="selected" >
+            <option value="1">isPrime</option>
+            <option value="2" >IsFibanacci</option>
+            
+          </select>
+        </mat-form-field>
+    </div>
+    <div class="colfixed-3">
+        <p > {{resultCol3}} </p>
+    </div>
+
+</div>

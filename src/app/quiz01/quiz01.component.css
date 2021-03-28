@@ -1,15 +1,28 @@
-.col1{
+.rowfixed{
     display: flex;
+    flex-direction: row;
+}
+.colfixed-1{
     flex-grow: 1;
     width: 200px;
+
 }
-.col2{
-    display: flex;
+.colfixed-2{
+
     flex-grow: 2;
-    width: 100%;
+    min-width: 100px;
+
 }
-.col3{
-    display: flex;
+.colfixed-3{
+
     width: 300px;  
-     flex-grow: 3;
+    flex-grow: 3;
+
 }
+div{
+    border: solid 1px black;
+}
+.example-additional-selection {
+    opacity: 0.75;
+    font-size: 0.75em;
+  }
